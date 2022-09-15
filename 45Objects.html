@@ -1,0 +1,53 @@
+<html>
+  <head>
+  <title>JavaScript
+ </title>
+  </head>
+
+  <body>
+   <h1> Objects</h1>
+
+  <p> It is the advance of the array in which the index number are written as properties.
+    and by targeting the properties name we can print the element.
+Also We can store array element in the object.
+We can also store object inside the object.
+Object are inclosed in the curly braces {}   </p>  
+  <script>
+  var a =  {
+    fname : "Divyanshu",
+    lname : "Pandey",
+    age : 20,
+    favMovies : ["KGF" , "Bahubali" , "Pushpa" , "RRR"],
+    salary : function(){
+        return 50000;
+    },
+    fullname : function(){
+        return this.fname + " " + this.lname;  // without writing 'this' it will not understand that fname and lname is defined.
+                   // 'this' means 'a'(object) , it means that properties of fname and lname form 'this'(i.e, object 'a'). 
+    },
+    living : {
+        city : "Agra",
+        country : "India"
+    }
+  }
+
+
+  console.log (a);
+ //  document.write(a);  // When we will print this it will show [object object]
+ // But we can individually print the element of the object 
+
+ document.write(a.age + "<br>");
+ document.write(a.favMovies + "<br>");
+ document.write(a.favMovies[3] + "<br>");
+
+ document.write(a.salary() + "<br>");
+
+ document.write(a.fullname());
+
+document.write("<br>" + a.living.city);
+    </script>
+	
+
+  </body>
+</html>
+

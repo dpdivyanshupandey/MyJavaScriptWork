@@ -1,0 +1,37 @@
+<html>
+  <head>
+  <title>JavaScript
+ </title>
+  </head>
+
+  <body>
+   <h1> MultiDimensional Array</h1>
+
+  <p>   </p>
+  <script>
+  var arr = [
+      ["Harry", 18, "Male", "B.Com"],
+      ["Sarah" , 19, "Female" , "BCA"],
+      ["Sunny", 20 , "Male" , "MBA"],
+      ["Tom" ,21 , "Male" , "B.E."]
+
+  ]
+
+  document.write(arr[1][2]);
+  document.write("<br>");
+
+  document.write("<table border= '2px'>");
+  for(var i = 0 ; i <=3 ; i++){ // Here we have although written 3 as length because we know ,but when we don't know the length of array themn we can write 'array.length'
+    document.write("<tr>");
+  for (var j = 0 ; j <=3 ; j++){
+    document.write( "<td>" + arr[i][j]+ "</td>");  // here arr[i][j] in which [i] denote outer index and [j] denote inner index  means it will print the array like nested form (i.e, tabular form)
+  
+   
+}
+  document.write("</tr>");
+  }
+  document.write("</table>");
+    </script>
+  </body>
+</html>
+

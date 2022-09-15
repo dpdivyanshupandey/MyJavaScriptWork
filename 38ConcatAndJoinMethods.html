@@ -1,0 +1,45 @@
+<html>
+  <head>
+  <title>JavaScript
+ </title>
+  </head>
+
+  <body>
+   <h1> Concat and Join </h1>
+
+  <p> => Concat --> It is used to concat(merge) two or more arrays. 
+    => Join --> It join all the element of the array to form a single value  </p>  
+  <script>
+    // Concat Type 1
+  var arr1= ["Raj","Pandey"];
+  
+   var arr2 = arr1.concat("Divyanshu",20);
+
+   document.write(arr2 + "<br>");
+
+
+   // Concat Type 2
+
+   var array1 = ["Shivam","Nikhil"];
+   var array2 = ["Naveen", "Rohan",20];
+   var array3 = [21,22,23];
+
+
+   var array4 = array1.concat(array2,array3);
+
+   document.write(array4 + "<br>");
+
+
+   // JOIN
+
+   var a = ["Divyanshu","Pandey"];
+   var b = a.join(" - ");  //This is the syntax of writing join method
+           // "  - "  it means the string will join with '-' sign ,we can use any sign. 
+ 
+           document.write(b);
+    </script>
+	
+
+  </body>
+</html>
+

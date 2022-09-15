@@ -1,0 +1,54 @@
+<html>
+  <head>
+  <title>JavaScript
+ </title>
+  </head>
+
+  <body>
+   <h1>Constant Variable with Array and Objects </h1>
+
+  <p> In case of Array, We cannot totally change all the element of the array together  ,but can  be done by one by one changing the valiue of the element with there index number ..
+     In case of Object, We cannot update all the element at same time ,but can update one by one changing its properties. </p>  
+  <script>
+  const arr = [10,20,30];
+ 
+//  arr = [15,25,35]; // because of this we can see a error in the console
+ 
+
+// To update value in array we can do this ..
+
+arr[0] = 15;
+arr[1] = 25;
+arr[2] = 35;
+
+document.write(arr);
+
+
+document.write("<br>");
+// To Update in objects we can do this..
+
+const object1 = {
+    name: "Raj",
+    age : 20,
+    class : "B.Tech"
+}
+
+/* object = {
+    name : "Divyanshu",
+    age : 21,
+    class : "B.E"
+}
+  */             //Because of this type of updation it will show error that can be seen in the console
+
+  
+  // So to update we can do .
+
+  object1.name = "Divyanshu";
+
+  document.write(object1.name);
+ </script>
+	
+
+  </body>
+</html>
+

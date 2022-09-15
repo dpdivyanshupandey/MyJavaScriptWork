@@ -1,0 +1,28 @@
+<html>
+  <head>
+  <title>JavaScript
+ </title>
+  </head>
+
+  <body>
+   <h1> Replace Method </h1>
+
+  <p> It will replace the character with different character.   </p>  
+  <script>
+  var str = " Raj Pandey in Agra and Taj Mahal in Agra";
+
+  document.write(str.replace("Raj", "Divyanshu") + "<br>");  // It takes two parameter in which 'Raj' will be replaced by 'Divyanshu'.
+    
+    document.write(str.replace("in" ,"lives in")); // It will just change only first  'in'  to  'lives in'
+    
+    // to change both 'in'  we can do this..
+
+    document.write("<br>");
+
+    document.write(str.replace(/in/g , "lives in "));
+    </script>
+	
+
+  </body>
+</html>
+

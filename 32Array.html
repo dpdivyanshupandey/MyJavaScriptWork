@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <title>JavaScript
+ </title>
+  </head>
+
+  <body>
+   <h1> Array in JavaScript  </h1>
+
+  <p>  It is used to store multiple data to a single variable.
+    We can also store the data of various datatypes  </p>
+  <script>
+  var array = [10,20,30,40,50];
+var sum = 0;
+  document.write (array + "<br>");  // It will print all the element of the array.
+
+  document.write(array[2] + "<br>");  // It will print the element at the index '2' .
+  
+  document.write(array[1] + array[3]);  // It will add the element at index '1' and index '2'.
+  
+  document.write("<br>");
+
+
+  // To print each element of the array separately
+document.write("<ul>");
+  for (var a = 0 ; a <= 4 ; a++){  // Here 'a' work on  the index number 
+    document.write("<li>" + array[a] + "<br>");   // As the index number increase it will print the element associated with the index 
+   sum = sum + array[a];
+   
+    }
+document.write(sum);
+  document.write("</ul>");
+    </script>
+  </body>
+</html>
+

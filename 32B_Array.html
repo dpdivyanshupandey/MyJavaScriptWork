@@ -1,0 +1,45 @@
+<html>
+  <head>
+  <title>JavaScript
+ </title>
+  </head>
+
+  <body>
+   <h1> Array </h1>
+
+  <p> -- Array can store multiple value by using a syntax 'new Array()'  </p>
+  <script>
+  var arr = new Array();  // Although we are defining 'new Array()' but we will use 'arr' it following code . 
+    arr[0] = "DP";    // It will store "DP" at the index 0.
+    arr[1] = 20;  // It will store '20' at index 1.
+      // Here we have not store any value at index 2  so it will print undefined  
+    arr[3] = true;  // It will store 'true' at index 3.
+    
+    for (var i =0 ; i <=3 ; i++){
+        document.write(arr[i] + "<br>"); 
+    }
+
+    // to get input from user 
+
+    var b = new Array();
+    for (var c = 0 ; c <= 2 ; c++){
+        b[c]= prompt("enter the value");
+
+        document.write(b[c] + " <br>");
+    }
+
+// 'new Array(3)'  means it limit the element to store upto index 3
+
+var array1 = new Array(2);
+array1[0] = "Pandey";
+array1[1] = 50 ;
+array1[2] = true;
+array1[3] = "Divyanshu";
+array1[4]  = "Friday";
+for (var e = 0 ; e <=5 ; e++){  
+    document.write(array1[e] + "<br>");
+}
+    </script>
+  </body>
+</html>
+
